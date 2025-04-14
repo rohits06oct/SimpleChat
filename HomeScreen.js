@@ -9,7 +9,7 @@ const HomeScreen = () => {
       }
       try {
         const response = await fetch(
-          "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=",
+          "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGJQLl485eq4t8u3V7JsxNArfntMkepbo",
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
