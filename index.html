@@ -2,24 +2,25 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>AI Content Generator</title>
+  <title>Simple Chat AI Model</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="root"></div>
+  <!-- Home Screen -->
+  <div id="homeScreen" class="screen">
+    <h1>Simple Chat AI Generator</h1>
+    <p>Enter your query to generate AI content:</p>
+    <input type="text" id="queryInput" placeholder="Enter your simple query...">
+    <button id="generateButton">Generate AI Content</button>
+  </div>
+  
+  <!-- Response Screen -->
+  <div id="responseScreen" class="screen" style="display: none;">
+    <h1>AI Generated Response</h1>
+    <div id="responseBox"></div>
+    <button id="backButton">Go Back</button>
+  </div>
 
-  <!-- React and Dependencies -->
-  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-  <!-- Use React Router DOM v6 from jsDelivr -->
-  <script src="https://cdn.jsdelivr.net/npm/react-router-dom@6/umd/react-router-dom.development.js" crossorigin></script>
-
-  <!-- Updated Babel Compiler for optional chaining support -->
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
-  <!-- Application JavaScript Files -->
-  <script type="text/babel" src="HomeScreen.js"></script>
-  <script type="text/babel" src="ResponseScreen.js"></script>
-  <script type="text/babel" src="app.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
