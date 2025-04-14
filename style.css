@@ -1,6 +1,38 @@
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .screen {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #responseBox {
+    text-align: left;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
   }
   
