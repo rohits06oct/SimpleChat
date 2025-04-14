@@ -1,25 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Simple Chat AI Model</title>
+  <title>Simple Chat AI Model | Your Personal AI Content Generator</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Home Screen -->
-  <div id="homeScreen" class="screen">
-    <h1>Simple Chat AI Generator</h1>
-    <p>Enter your query to generate AI content:</p>
-    <input type="text" id="queryInput" placeholder="Enter your simple query...">
-    <button id="generateButton">Generate AI Content</button>
-  </div>
-  
-  <!-- Response Screen -->
-  <div id="responseScreen" class="screen" style="display: none;">
-    <h1>AI Generated Response</h1>
-    <div id="responseBox"></div>
-    <button id="backButton">Go Back</button>
-  </div>
+  <!-- Top Bar with Logo and Navigation -->
+  <header>
+    <div class="logo">Simple Chat</div>
+    <nav>
+      <ul>
+        <li><a href="#" data-page="home">Home</a></li>
+        <li><a href="#" data-page="about">About Us</a></li>
+        <li><a href="#" data-page="simple-chat">Simple Chat</a></li>
+        <li><a href="#" data-page="contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content Area -->
+  <main>
+    <!-- Home Page -->
+    <section id="home" class="page">
+      <h1>Welcome to Simple Chat AI Model</h1>
+      <p>
+        your reliable partner for generating high-quality, human-like content effortlessly. Our platform leverages advanced AI technology powered by ChatGPT to deliver prompt, accurate, and contextually relevant content tailored to your specific needs.
+      </p>
+    </section>
+
+    <!-- About Us Page -->
+    <section id="about" class="page">
+      <h1>About Us</h1>
+      <p>
+        <b>Simple Chat AI Model</b> was created with a mission to simplify and enhance everyday communication and content creation through powerful AI-driven technology. Our platform utilizes state-of-the-art AI systems based on the robust and reliable ChatGPT model, designed to provide seamless, intuitive interactions.
+      </p>
+      <h1>Why Choose Simple Chat AI Model?</h1>
+      <p><b>User-Friendly Interface: </b>Accessible and easy to use for everyone, regardless of technical expertise.</p>
+      <p><b>Consistent Quality: </b>Delivers consistently accurate, relevant, and engaging content.</p>
+      <p><b>Tailored Solutions: </b>Customized responses for diverse sectors including business, education, and creative industries.</p>
+      <h1>Our Vision</h1>
+      <p>
+        We strive to empower users by making advanced AI accessible and beneficial for all. Our vision is to lead the way in AI-driven content solutions, continuously innovating to support your communication and creativity goals. Experience the simplicity and efficiency of AI-powered communication with
+        <b>Simple Chat AI Model.</b>
+      </p>
+      <p>
+        Join us as we explore new realms of creative digital storytelling.
+      </p>
+    </section>
+
+    <!-- Simple Chat Page -->
+    <section id="simple-chat" class="page">
+      <h1>Simple Chat</h1>
+      <p>
+        Type your query below to generate an AI-based response. Our chat interface is responsive and styled with modern effects.
+      </p>
+      <input type="text" id="queryInput" placeholder="Enter your query to generate AI content:">
+      <button id="generateButton">Generate</button>
+      <div id="responseBox"></div>
+    </section>
+
+    <!-- Contact Us Page -->
+    <section id="contact" class="page">
+      <h1>Contact Us</h1>
+      <p>
+        We'd love to hear from you! Reach out for collaborations, feedback, or just a friendly hello.
+      </p>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
 
   <script src="script.js"></script>
 </body>
